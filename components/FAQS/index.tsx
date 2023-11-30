@@ -40,7 +40,7 @@ const Faqs = () => {
           <div className="text-[16px] font-bold lg:text-[22px] xl:text-[32px]">
             FAQs.{''}{' '}
             <span className="font-semibold text-[#959595]">
-              Frequenty Asked Questions
+              Frequently Asked Questions
             </span>
           </div>
           <div className="mt-[23px] text-[11px] font-bold lg:mt-[47px] xl:text-[16px]">
