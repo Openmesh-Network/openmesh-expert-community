@@ -59,9 +59,15 @@ const ChangePassword = () => {
   ]
 
   const validSchema = Yup.object().shape({
-    oldPassword: Yup.string().required('Password is required'),
-    password: Yup.string().required('Password is required'),
-    confirmPassword: Yup.string().required('Confirm password is required'),
+    oldPassword: Yup.string()
+      .required('Password is required')
+      .min(8, 'Min of 8 digits'),
+    password: Yup.string()
+      .required('Password is required')
+      .min(8, 'Min of 8 digits'),
+    confirmPassword: Yup.string()
+      .required('Confirm password is required')
+      .min(8, 'Min of 8 digits'),
   })
   const {
     register,

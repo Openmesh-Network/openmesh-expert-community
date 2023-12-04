@@ -201,8 +201,12 @@ const Register = () => {
     website: Yup.string().notRequired(),
     description: Yup.string().required('Description is required'),
     location: Yup.string().notRequired(),
-    password: Yup.string().required('Password is required'),
-    confirmPassword: Yup.string().required('Confirm password is required'),
+    password: Yup.string()
+      .required('Password is required')
+      .min(8, 'Min of 8 digits'),
+    confirmPassword: Yup.string()
+      .required('Confirm password is required')
+      .min(8, 'Min of 8 digits'),
     scheduleCalendlyLink: Yup.string().notRequired(),
     tags: Yup.array()
       .of(Yup.string())
