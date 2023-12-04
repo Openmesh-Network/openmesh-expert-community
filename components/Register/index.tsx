@@ -434,7 +434,7 @@ const Register = () => {
         const element = document.getElementById('emailId')
         element.scrollIntoView({ behavior: 'smooth' })
       } else {
-        toast.error('something ocurred')
+        toast.error(`Error: ${err.response.data.message}`)
       }
       console.log(err.response.data.message)
       setIsLoading(false)
