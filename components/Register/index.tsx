@@ -58,11 +58,11 @@ const Register = () => {
   const [selectedFiles, setSelectedFiles] = useState<File[]>([])
   const [accountCreated, setAccountCreated] = useState<boolean>(false)
   const [isRecaptchaValidated, setIsRecaptchaValidated] =
-    useState<boolean>(false)
+    useState<boolean>(true)
   const [imagePreview, setImagePreview] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [passwordVisibility, setPasswordVisibility] = useState<boolean>(true)
-  const [googleRecaptchaToken, setGoogleRecaptchaToken] = useState('')
+  const [googleRecaptchaToken, setGoogleRecaptchaToken] = useState('00000')
   const [isCompany, setIsCompany] = useState<boolean>(false)
   const [isOpenRD, setIsOpenRD] = useState<boolean>(false)
   const [isPageRedirect, setIsPageRedirect] = useState<string>()
@@ -862,10 +862,10 @@ const Register = () => {
                     />
                   </div>
                   <div className="mt-[30px] lg:mt-[60px]">
-                    <ReCAPTCHA
+                    {/* <ReCAPTCHA
                       sitekey="6Lchix8oAAAAAAdqTFECXq6w_Buuv_18FYgkHMiQ"
                       onChange={onChange}
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>
