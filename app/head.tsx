@@ -10,7 +10,7 @@ export default function Head() {
           process.env.NEXT_PUBLIC_ENVIRONMENT === 'PROD'
             ? process.env.NEXT_PUBLIC_BASE_PATH
             : ''
-        }/openmesh-blue.png`}
+        }/images/openmesh-blue.png`}
       />
     </>
   )
